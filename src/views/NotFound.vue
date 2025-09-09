@@ -1,0 +1,1 @@
+<template><div class='container py-6'>404 — Página no encontrada</div></template>
