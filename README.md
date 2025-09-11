@@ -103,12 +103,6 @@ src/
 
 ## 🎨 **DISEÑO Y ESTILO**
 
-### **Paleta de Colores Netflix:**
-- **🖤 Negro:** `#000000` - Fondo principal
-- **🔴 Rojo Netflix:** `#dc2626`, `#e50914` - Acentos y botones
-- **⚪ Blanco:** `#ffffff` - Texto principal
-- **🔘 Grises:** `#1a1a1a`, `#374151` - Elementos secundarios
-
 ### **Componentes Estilizados:**
 - **Navegación:** Header fijo con hover effects rojos
 - **MovieCard:** Efectos hover con overlay estilo Netflix
