@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test TMDB API</title>
+</head>
+<body>
+    <h1>Test TMDB API</h1>
+    <button onclick="testAPI()">Test API</button>
+    <div id="result"></div>
+
+    <script>
+        async function testAPI() {
+            const API_KEY = 'fa19cf8c49d6a5226f514893a8aeaec8';
+            const BASE_URL = 'https://api.themoviedb.org/3';
+            
+            try {
+                console.log('Testing API...');
+                const response = await fetch(`${BASE_URL}/trending/movie/week?api_key=${API_KEY}`);
+                console.log('Response status:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                console.log('API Response:', data);
+                
+                document.getElementById('result').innerHTML = `
+                    <h2>API Test Success!</h2>
+                    <p>Status: ${response.status}</p>
+                    <p>Movies found: ${data.results.length}</p>
+                    <p>First movie: ${data.results[0]?.title}</p>
+                `;
+            } catch (error) {
+                console.error('API Error:', error);
+                document.getElementById('result').innerHTML = `
+                    <h2>API Test Failed!</h2>
+                    <p>Error: ${error.message}</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
