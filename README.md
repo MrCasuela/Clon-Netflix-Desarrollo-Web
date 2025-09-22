@@ -192,34 +192,6 @@ src/
 
 ---
 
-## 🎯 **CAMBIOS REALIZADOS EN EL DESARROLLO**
-
-### **🔄 Nuevas Funcionalidades Agregadas:**
-
-#### **🔐 Sistema de Autenticación Completo:**
-- LoginView y RegisterView con formularios estilizados
-- Store de autenticación con Pinia (`useAuth.ts`)
-- Middleware de router para rutas protegidas
-- Menú de usuario con avatar y dropdown
-- Persistencia de sesión en localStorage
-- Validaciones de email, contraseña y términos
-
-#### **🎬 Trailers Integrados:**
-- Modal de trailer con reproductor YouTube embedido
-- Detección automática de trailers oficiales
-- Botón "Ver Trailer" en vista de detalles
-- Autoplay y controles de cierre del modal
-- Fallback a teasers si no hay trailer oficial
-
-#### **🎨 Mejoras de UI/UX:**
-- Backdrop heroico en vista de detalles
-- Información técnica completa (cast, presupuesto, idioma)
-- Grid de información organizada
-- Estados de autenticación en navegación
-- Transiciones suaves entre páginas
-
----
-
 ## 🚦 **COMANDOS DISPONIBLES**
 
 ```bash
